@@ -1,0 +1,25 @@
+/** generell rules **/
+body{
+  background-color: black;
+}
+
+/** Start - MISSION - SECTION **/
+#mission{
+  height: 700px;
+  background-image: url('./../images/img-mission-background.jpg');
+}
+#mission.headline{
+  width: 1200px;
+  vertical-align: center;
+}
+#mission.headline h2, #mission.headline h4{
+  text-align: center;
+}
+/** End - MISSION - SECTION **/
+
+/** Start - LOCATIONS - SECTION **/
+#locations{
+  height: 500px;
+  background-image: url('./../images/img-locations-background.jpg')
+}
+/** End - LOCATIONS - SECTION **/
