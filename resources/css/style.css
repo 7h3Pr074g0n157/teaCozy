@@ -79,3 +79,7 @@ header li{
 .contact{
   height: 200px;
 }
+
+footer{
+  text-align: left;
+}
