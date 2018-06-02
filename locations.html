@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+    *{
+      margin: 0;
+      font-family: Helvetica;
+      font-size: 22px;
+      color: seashell;
+      background-color: black;
+      opacity: 0.9;
+      text-align: center;
+    }
+    .content{
+      width: 1200px;
+      margin: 20px;
+    }
+    #locations{
+      height: 500px;
+      width: 1200px;
+      background-image: url('./resources/images/img-locations-background.jpg');
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .headline, .headline h2, .location-items{
+      background-color: transparent;
+    }
+  #locations .location-items{
+      display: flex;
+      flex-direction: row;
+    }
+    article.location{
+      width: 300px;
+      margin: 20px;
+      align-content: space-around;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title>Locations</title>
+  </head>
+  <body>
+    <main class="content">
+
+    <section id="locations">
+      <div class="headline">
+        <h2>Locations</h2>
+      </div>
+      <div class="location-items">
+      <article class="location">
+        <h3>Downtown</h3>
+        <p>384 West 4th St</p>
+        <p>Suite 108</p>
+        <p>Portland, Maine</p>
+      </article>
+      <article class="location">
+        <h3>East Bayside</h3>
+        <p>3433 Phisherman's Avenue</p>
+        <p>(Northwest Corner)</p>
+        <p>Portland, Maine</p>
+      </article>
+      <article class="location">
+        <h3>Oakdale</h3>
+        <p>515 Crescent Avenue</p>
+        <p>Second Floor</p>
+        <p>Portland, Maine</p>
+      </article>
+      </div>
+    </section>
+
+    </main>
+  </body>
+</html>

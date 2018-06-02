@@ -15,14 +15,25 @@
 }
 /** Start - MISSION - SECTION **/
 header{
+  width: 100%;
   height: 69px;
-  margin-left: 10px;
   display: fixed;
+  z-index: 1;
+  top: 0;
   border-bottom: 1px solid seashell;
 }
-header li{
-  display: inline-block;
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  margin-left: 10px;
+}
+nav li{
   list-style-type: none;
+  display: inline-block;
 }
 
 /** Start - MISSION - SECTION **/
@@ -58,28 +69,42 @@ header li{
 #locations{
   height: 500px;
   background-image: url('./../images/img-locations-background.jpg');
-}
-#locations .headline{
-  background-color: rgba(255,255,255,0);
-}
-#locations .loc-items{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.location{
-  width: 300px;
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-  opacity: 1;
+.headline, #locations .headline h2, .location-items{
+  background-color: transparent;
 }
+.headline{
+  margin-bottom: 15px;
+}
+.location-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.location{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 1;
+  width:300px;
+  height: 300px;
+  margin: 0 20px;
+}
+
 /** End - LOCATIONS - SECTION **/
 
 .contact{
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 footer{
   text-align: left;
+  margin: 20px;
 }
